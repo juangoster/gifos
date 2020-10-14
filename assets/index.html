@@ -3,16 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/grid.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <div class="container row">
+            <div class="col-6">
+                <img src="./images/logo-mobile.svg" alt="logo Gifos" class="logo">
+            </div>
+            <div class="col-6">
+                <button class="burguer"></button>
+            </div>
 
+                <nav class="navbar">
+                        <ul>
+                            <li><a class="menuLink fontMontserrat" href="#">Modo Nocturno <hr></a></li>
+                            <li><a class="menuLink fontMontserrat" href="#">Favoritos <hr></a></li>
+                            <li><a class="menuLink fontMontserrat" href="#">Mis Gifos <hr></a></li>
+                        </ul>
+                </nav>
 
-    <div class="trendingContainer">
+            <h1 class="fontMontserrat fontBlue innerContainer">Inspírate, busca, guarda, y crea los mejores <span class="fontCian">GIFOS</span></h1>
+           
+        </div>
+
+    </header>
+    <main>
+        <div class="container">
+            <div class="innerContainer">
+                <div>
+                    <img src="/repositorio/gifos/assets/images/ilustra_header.svg" alt="">
+                </div>
+            </div>
+                <div class="searchControl row fontRoboto">
+                    <input type="text" value="Busca GIFOS y más" id="txtSearch">
+                    <input type="button" value="" id="btnSearch">
+                </div>       
+
+            <h2 class="fontMontserrat fontBlue innerContainer">Trending:</h2>
+            <h3 class="fontMontserrat fontBlue innerContainer">Reactions, Entertainment, Sports, Stickers, Artists</h3>
+            
+
+        </div>
+        <div class="resultContainer container-fluid">
+
+            <div id="txtResultContainer" class="fontMontserrat fontBlue innerContainer">Trending GIFOS</div>
+            <div id="descriptResultContainer" class="fontRoboto innerContainer" >Mira los últimos GIFOS de nuestra comunidad.</div>
+
+            <div class="imageContainer container row">
+                
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="innerContainer row">
+            <div class="col-4"></div>
+
+            <div id="shareIn" class="col-4">
+                <div class="fontRoboto">Compartir en:</div>
+
+                <div class="social row">
+                    <a href="https://www.instagram.com/?hl=es-la"><div class="iconSocial">
+                        <i class="fa fa-instagram"></i>
+                    </div></a>
+                    <a href="https://twitter.com/?lang=es"><div class="iconSocial">
+                        <i class="fa fa-twitter"></i>
+                    </div></a>
+                    <a href="https://es-la.facebook.com/"><div class="iconSocial">
+                        <i class="fa fa-facebook"></i>
+                    </div></a>
+                </div>
+            </div>
+
+            <div class="col-4"></div>
+        </div>
+    </br>
+    </br>
+
+            <div class="fontRoboto">© GIFOS 2020 All Rights Reserved.</div>
+
+       
         
-    </div>
+    </footer>
+
+    <script src="./scripts/styleScripts.js"></script>
     <script src="./scripts/gifos.js"></script>
+    
 </body>
 </html>

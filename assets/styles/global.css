@@ -1,0 +1,209 @@
+body{
+    margin: 0px;
+}
+
+main{
+    text-align: center;
+}
+
+img{
+    width: 100%;
+
+}
+
+.fontRoboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+.fontMontserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fontBlue{
+    color: #572EE5;
+}
+
+.fontCian{
+    color: #50E3C2;
+}
+
+.container {
+    padding: 10px 20px 0px 20px;
+}
+
+.innerContainer {
+    padding: 10px 40px 0px 40px;
+}
+
+
+.container-fluid{
+     padding: 0px;
+    margin: 0px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  
+    justify-items: center;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-items: center;
+    width: 100%;
+   margin: auto;
+}
+
+/*------------------------------------header------------------------------*/
+.logo{
+    max-width: 59.1px;
+    min-width: 48.8px;
+}
+
+.burguer{
+    z-index: 1000;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url(/repositorio/gifos/assets/images/burger.svg);
+    background-size: 100%;
+}
+
+.menuClose{
+    background-image: url(/repositorio/gifos/assets/images/Button-close-hover-modo-noc.svg);
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #562ee5e3;
+    width: 100vw;
+    height: 480px;
+    overflow: hidden;
+    color: white;
+    transform: translateY(-99%);
+    transition: transform 0.2s ease;
+  }
+
+.showMenu {
+    transform: translateY(70px);
+}
+
+ul{
+    padding: 0;
+    margin-top: 2rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+li{
+    list-style: none;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    
+   }
+hr{
+    width: 15%;
+    margin-top: 20px;
+    height: 1px;
+}
+
+
+.menuLink{
+    color: white;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 700; 
+}
+
+
+
+/*---------------------------------------main------------------------------------*/
+#txtSearch{
+    border: none;
+    width: 80%;
+    background-color: transparent;
+    text-align: center;
+    color: #6B7989;
+    font-size: 16;
+
+}
+
+#btnSearch{
+    width: 20px;
+    background-image: url(/repositorio/gifos/assets/images/icon-search.svg);
+    background-color: transparent;
+    background-size: 100%;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.searchControl{
+    margin-top: -4px;
+    border: solid #572EE5 1px;
+    border-radius: 25px;
+    width: 100%;
+    height: 50px;
+     
+}
+
+main h2{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+main h3{
+    font-size: 14px;
+    font-weight: 500;
+}
+.resultContainer{
+    width: 100%;
+    padding: 10% 0;
+    background-color: #F3F5F8;
+}
+#txtResultContainer{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#descriptResultContainer{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/*-----------------------------------footer--------------------------------*/
+footer{
+    text-align: center;
+}
+
+.social{
+    justify-items: center;
+    justify-content: space-between;
+   
+}
+
+footer div{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.iconSocial{
+    color: #CDD6E0;
+}
