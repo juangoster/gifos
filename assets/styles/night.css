@@ -1,0 +1,21 @@
+.nightMode{
+    color: white;
+    background-color: #37383C;
+}
+
+.nightGifosArea{
+    color: white;
+    background-color: #222326;
+}
+
+.nightFont{
+    color: white;
+}
+
+.nightBurguer{
+    background-image: url(/repositorio/gifos/assets/images/burger-modo-noct.svg);
+}
+
+.nightLogo{
+    background-image: url(/repositorio/gifos/assets/images/logo-mobile-modo-noct.svg);
+}

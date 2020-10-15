@@ -58,9 +58,9 @@ const btnSearch = document.querySelector('#btnSearch');
 
 btnSearch.addEventListener('click', function(){
        const textValue = txt.value;
+
        giphyService.getSearch(function(data){
-       console.log(data);
-       
+           
        data.forEach(elemento => {
         const lista = document.createElement('div');
         lista.classList.add("imageGiphy");
