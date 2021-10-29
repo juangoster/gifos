@@ -1,5 +1,6 @@
 body{
     margin: 0px;
+    padding: 0px;
 }
 
 main{
@@ -49,6 +50,17 @@ img{
     justify-items: center;
 }
 
+.trendRow {
+    display: flex;
+    overflow-x: auto;
+  }
+
+.cont img{
+    height: 200px;
+    width: auto;
+    margin-right: 10px;
+}
+
 .column{
     display: flex;
     flex-direction: column;
@@ -61,9 +73,12 @@ img{
 
 /*------------------------------------header------------------------------*/
 .logo{
-    max-width: 59.1px;
-    min-width: 48.8px;
-    
+    width: 59.1px;
+    height: 48.8px;
+    background-image: url(../images/logo-mobile.svg);
+    border: none;
+    background-position: left;
+    background-repeat: no-repeat;
 }
 
 .burguer{
@@ -76,12 +91,12 @@ img{
     border: none;
     cursor: pointer;
     background-color: transparent;
-    background-image: url(/repositorio/gifos/assets/images/burger.svg);
+    background-image: url(../images/burger.svg);
     background-size: 100%;
 }
 
 .menuClose{
-    background-image: url(/repositorio/gifos/assets/images/Button-close-hover-modo-noc.svg);
+    background-image: url(../images/close.svg);
 }
 
 .navbar {
@@ -90,10 +105,10 @@ img{
     left: 0;
     background: #562ee5e3;
     width: 100vw;
-    height: 480px;
+    height: 400px;
     overflow: hidden;
     color: white;
-    transform: translateY(-99%);
+    transform: translateY(-100%);
     transition: transform 0.2s ease;
   }
 
@@ -116,7 +131,7 @@ li{
     
    }
 hr{
-    width: 15%;
+    width: 30%;
     margin-top: 20px;
     height: 1px;
 }
@@ -143,12 +158,130 @@ h1{
     text-align: center;
     color: #6B7989;
     font-size: 16;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.imageGiphy{
+    width: 41.6%;
+    height: 10%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.imageGiphy:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.imageGiphy:hover .overImage{
+    opacity: 1;
+}
+
+
+.imageGiphy img{
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.overImage{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(22, 2, 92, 0.5);
+    z-index: 2;
+    position: absolute;
+    opacity: 0;
+    color: white;
+}
+.navOver{
+    height: 20%;
+    margin: 3%;
+}
+
+#like{
+    width: 20%;
+    height: auto;
+    background-image: url(../images/icon-fav.svg);
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#like:hover{
+    background-image: url(../images/icon-fav-hover.svg)
+}
+
+#like:active{
+    background-image: url(../images/icon-fav-active.svg)
+}
+
+#downL{
+    width: 20%;
+    height: auto;
+    background-image: url(../images/icon-download.svg);
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#downL:hover{
+    background-image: url(../images/icon-download-hover.svg)
+}
+
+#max{
+    width: 20%;
+    height: auto;
+    background-image: url(../images/icon-max-normal.svg);
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#max:hover{
+    background-image: url(../images/icon-max-hover.svg)
+}
+
+
+.footOver{
+    object-position: bottom;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    width: 80%;
+    height: 30%;
+    margin-left: 5%;
+}
+
+.footOver p{
+    font-size: 15px;
+}
+
+
+.btnMore{
+    border: solid #572EE5 1px;
+    border-radius: 25px;
+    width: 127PX;
+    height: 50px;
+    font-weight: 700;
+    margin-top: 15%;
 
 }
 
-#btnSearch{
+.btnSearch{
     width: 20px;
-    background-image: url(/repositorio/gifos/assets/images/icon-search.svg);
+    background-image: url(../images/icon-search.svg);
     background-color: transparent;
     background-size: 100%;
     border: none;
@@ -162,8 +295,28 @@ h1{
     border-radius: 25px;
     width: 100%;
     height: 50px;
-     
+    text-decoration: none;
 }
+
+input:focus {
+outline: none;
+}
+
+.searchTitle{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #572EE5;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.searchContainer{
+    padding-bottom: 15%;
+    width: 100%;
+
+}
+
 
 main h2{
     font-size: 16px;
@@ -176,8 +329,8 @@ main h3{
 }
 .resultContainer{
     width: 100%;
-    padding: 10% 0;
     background-color: #F3F5F8;
+
 }
 #txtResultContainer{
     font-size: 20px;
@@ -187,6 +340,30 @@ main h3{
 #descriptResultContainer{
     font-size: 16px;
     font-weight: 500;
+}
+
+.autoCompleteLi{
+    width: 100%;
+    font-size: 16px;
+    color: #9CAFC3;
+    
+}
+
+.autoCompleteLi:hover{
+    color:#572EE5;
+
+}
+
+.autoCompleteLi .btnSearch{
+    width: 10px;
+}
+
+.borderList{
+    margin-top: -51px;
+    padding-top: 50px;
+    border: solid 1px #572EE5;
+    border-radius: 25px;
+    width: 100%;
 }
 
 /*-----------------------------------footer--------------------------------*/

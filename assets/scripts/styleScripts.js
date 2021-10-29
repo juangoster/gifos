@@ -24,13 +24,19 @@ const containerResult = document.querySelector(".resultContainer");
 const blueFont = document.querySelectorAll(".fontBlue");
 const nightBurguer = document.querySelector(".burguer");
 const nightLogo = document.querySelector(".logo");
+const nightClose = document.querySelector(".menuClose");
+const nightSearch = document.querySelector(".btnSearch");
+const nightSearchControl = document.querySelector(".searchControl");
+
 btnNight.addEventListener("click", toggleNight);
 
 function toggleNight(){
     document.body.classList.toggle("nightMode");
     containerResult.classList.toggle("nightGifosArea");
     nightBurguer.classList.toggle("nightBurguer");
-    nightLogo.setAttribute("src", "./images/logo-mobile-modo-noct.svg")
+    nightLogo.classList.toggle("nightLogo");
+    nightSearch.classList.toggle("nightSearch");
+    nightSearchControl.classList.toggle("nightSearchControl");
 
     blueFont.forEach(font =>{
         font.classList.toggle("nightFont")

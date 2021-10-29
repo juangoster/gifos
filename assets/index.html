@@ -14,8 +14,8 @@
 <body>
     <header>
         <div class="container row">
-            <div class="col-6">
-                <img src="./images/logo-mobile.svg" alt="logo Gifos" class="logo">
+            <div class="col-6 logo">
+             
             </div>
             <div class="col-6">
                 <button class="burguer"></button>
@@ -24,8 +24,8 @@
                 <nav class="navbar">
                         <ul>
                             <li><a class="menuLink fontMontserrat" href="#" id="switchNight">Modo Nocturno <hr></a></li>
-                            <li><a class="menuLink fontMontserrat" href="#">Favoritos <hr></a></li>
-                            <li><a class="menuLink fontMontserrat" href="#">Mis Gifos <hr></a></li>
+                            <li><a class="menuLink fontMontserrat" href="./favorites.html">Favoritos <hr></a></li>
+                            <li><a class="menuLink fontMontserrat" href="./createGif.html">Mis Gifos <hr></a></li>
                         </ul>
                 </nav>
 
@@ -38,27 +38,36 @@
         <div class="container">
             <div class="innerContainer">
                 <div>
-                    <img src="/repositorio/gifos/assets/images/ilustra_header.svg" alt="">
+                    <img src="../assets//images/ilustra_header.svg" alt="">
                 </div>
             </div>
-                <div class="searchControl row fontRoboto">
-                    <input type="text" value="Busca GIFOS y más" id="txtSearch">
-                    <input type="button" value="" id="btnSearch">
-                </div>       
+                <div class="searchControl row">
+                    <input type="text" placeholder="Busca GIFOS y más" id="txtSearch">
+                    <input type="button"  id="btnSearch" class="btnSearch">
+                </div>
+                <div class="searchList">
+
+                </div>
+                
+            
+    
 
             <h2 class="fontMontserrat fontBlue innerContainer">Trending:</h2>
             <h3 class="fontMontserrat fontBlue innerContainer">Reactions, Entertainment, Sports, Stickers, Artists</h3>
             
 
         </div>
+  
         <div class="resultContainer container-fluid">
+            <div class="searchContainer container-fluid row">
+            </div>
 
             <div id="txtResultContainer" class="fontMontserrat fontBlue innerContainer">Trending GIFOS</div>
             <div id="descriptResultContainer" class="fontRoboto innerContainer" >Mira los últimos GIFOS de nuestra comunidad.</div>
 
-            <div class="imageContainer container row">
-                
+            <div class="trendingContainer container-fluid trendRow">
             </div>
+
         </div>
 
     </main>
